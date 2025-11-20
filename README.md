@@ -10,7 +10,7 @@
 
 ## 2. Data
 - Source: dataset used
-- El dataset utilizado en la medida de lo posible, se usara uno de la FCV, de no ser posible, se buscaran datasets publicos
+- Se utilizara un dataset publico de Keaggle, que cuenta con 25000 filas y 17 columnas
 - Key variables
 - Las principales variables son el diagnostico de ingreso y el diagnostico de egreso, actualmente no cuento con mas información referente a la clasificación para un reingreso
 - Limitations
