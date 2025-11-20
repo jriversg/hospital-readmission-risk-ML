@@ -10,22 +10,45 @@
 
 ## 2. Data
 - Source: dataset used
-- Se utilizara un dataset publico de Keaggle, que cuenta con 25000 filas y 17 columnas
+- Se utilizara un dataset publico de Keaggle, que cuenta con 25000 filas y 17 columnas. link: https://www.kaggle.com/datasets/dubradave/hospital-readmissions?resource=download
+- Este dataset cuenta con las siguientes variables:
+* Edad -- > age
+* Dias en hospitalización --> time_in_hospital
+* Número de procedimientos en la estancia actual --> n_procedures
+* Número de laboratorios realizados en la estancia actual --> n_lab_procedures
+* Número de medicamentos suministrados en la estancia actual --> n_medications
+* Número de visitas ambulatorios el año antes de la estancia actual --> n_outpatient
+* Número de visitas hospitalarias el año antes de la estancia actual --> n_inpatient
+* Número de visitas a urgencias el año antes de la estancia actual --> n_emergency
+* Especialidad del médico que ingresa al paciente en la estancia actual --> medical_specialty
+* Diagnostico 1 --> diag_1
+* Diagnostico 2 --> diag_2
+* Diagnostico 3 --> diag_3
+* Test de glucosa en sangre --> glucose_test
+* Nivel de A1C --> A1Ctest
+* Si hubo cambio en la medicacion de la diabetes --> change
+* Si se prescribio un medicamento para diabetes --> diabetes_med
+* Reingresado --> readmitted
 - Key variables
-- Las principales variables son el diagnostico de ingreso y el diagnostico de egreso, actualmente no cuento con mas información referente a la clasificación para un reingreso
+* readmitted --> Variable objetivo
+* age, time_in_hospital, diag_1, diag_2, glucose_test: son variables que serviran para el entrenamiento del modelo
 - Limitations
 - No cuento con el contacto constante del personal que realiza la revisión de los reingresos, pero puedo pedir apoyo si es necesario en ellos para poder entender un poco mejor este tema
 
 ## 3. Approach
 - ML models to test
-- Regresión lineal
-- Arboles de decision
-- Bosques aleatorios
+* Regresión logistica
+* Arbol de decisión
+* Random Forest
 - Evaluation metrics
-- F1 score
+* F1-score
+* ROC-AUC
+* Matriz de confusión
 
 ## 4. Expected Impact
 - Examples of decisions improved by risk scores
+* Identificar pacientes con alto riesgo de reingreso hospitalario antes del alta
+* Optimizar el giro-cama evitando reingresos innecesario o evitables
 
 ## 5. Roadmap
 - [ ] EDA
